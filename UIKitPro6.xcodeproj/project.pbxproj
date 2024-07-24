@@ -15,6 +15,7 @@
 		9B680E962C517A7C00143042 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9B680E952C517A7C00143042 /* Base */; };
 		9B680E9E2C51800500143042 /* Petition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680E9D2C51800500143042 /* Petition.swift */; };
 		9B680EA02C51817000143042 /* Petitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680E9F2C51817000143042 /* Petitions.swift */; };
+		9B680EA22C51A12300143042 /* DetaitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B680EA12C51A12300143042 /* DetaitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9B680E972C517A7C00143042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B680E9D2C51800500143042 /* Petition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petition.swift; sourceTree = "<group>"; };
 		9B680E9F2C51817000143042 /* Petitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Petitions.swift; sourceTree = "<group>"; };
+		9B680EA12C51A12300143042 /* DetaitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				9B680E8D2C517A7B00143042 /* ViewController.swift */,
 				9B680E9D2C51800500143042 /* Petition.swift */,
 				9B680E9F2C51817000143042 /* Petitions.swift */,
+				9B680EA12C51A12300143042 /* DetaitViewController.swift */,
 				9B680E8F2C517A7B00143042 /* Main.storyboard */,
 				9B680E922C517A7C00143042 /* Assets.xcassets */,
 				9B680E942C517A7C00143042 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B680E8E2C517A7B00143042 /* ViewController.swift in Sources */,
+				9B680EA22C51A12300143042 /* DetaitViewController.swift in Sources */,
 				9B680E9E2C51800500143042 /* Petition.swift in Sources */,
 				9B680E8A2C517A7B00143042 /* AppDelegate.swift in Sources */,
 				9B680E8C2C517A7B00143042 /* SceneDelegate.swift in Sources */,
