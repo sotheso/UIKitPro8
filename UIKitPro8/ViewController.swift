@@ -23,6 +23,7 @@ class ViewController: UITableViewController {
             urlString = "https://www.hackingwithswift.com/samples/petitions-2 .json"
         }
         
+        // GCD: GCD یک ابزار است که به برنامه‌نویسان اجازه می‌دهد تا کدهای خود را به صورت همزمان (چندوظیفه‌ای) اجرا کنند. به عبارت دیگر، GCD کمک می‌کند که برنامه بتواند چند کار را همزمان انجام دهد بدون اینکه دچار کندی یا قفل شدن شود.
         DispatchQueue.global(qos: .userInitiated) .async {
             [weak self] in
             if let url = URL(string: urlString) {
@@ -31,14 +32,17 @@ class ViewController: UITableViewController {
                         return
                 }
             }
+            self?.showError()
         }
-        showError()
-        }
+    }
     
     func showError() {
-        let ac = UIAlertController(title: "Lodding Error", message: "برای لود کردن صفحه مشکلی پیش آمده", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "باشه", style: .default))
-        present(ac, animated: true)
+        DispatchQueue.main.async {
+            [weak self] in
+            let ac = UIAlertController(title: "Lodding Error", message: "برای لود کردن صفحه مشکلی پیش آمده", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "باشه", style: .default))
+            self?.present(ac, animated: true)
+        }
     }
     
     func parse (json: Data) {
@@ -47,7 +51,12 @@ class ViewController: UITableViewController {
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json){
             // بارگیری داده های جیسون
             petitions = jsonPetitions.results
-            tableView.reloadData()
+            
+            DispatchQueue.main.async {
+                [weak self] in
+                self?.tableView.reloadData()
+
+            }
         }
     }
 
