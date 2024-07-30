@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B680E862C517A7B00143042 /* UIKitPro6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPro6.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B680E862C517A7B00143042 /* UIKitPro8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPro8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B680E892C517A7B00143042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B680E8B2C517A7B00143042 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9B680E8D2C517A7B00143042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		9B680E7D2C517A7B00143042 = {
 			isa = PBXGroup;
 			children = (
-				9B680E882C517A7B00143042 /* UIKitPro6 */,
+				9B680E882C517A7B00143042 /* UIKitPro8 */,
 				9B680E872C517A7B00143042 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		9B680E872C517A7B00143042 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B680E862C517A7B00143042 /* UIKitPro6.app */,
+				9B680E862C517A7B00143042 /* UIKitPro8.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B680E882C517A7B00143042 /* UIKitPro6 */ = {
+		9B680E882C517A7B00143042 /* UIKitPro8 */ = {
 			isa = PBXGroup;
 			children = (
 				9B680E892C517A7B00143042 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				9B680E942C517A7C00143042 /* LaunchScreen.storyboard */,
 				9B680E972C517A7C00143042 /* Info.plist */,
 			);
-			path = UIKitPro6;
+			path = UIKitPro8;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B680E852C517A7B00143042 /* UIKitPro6 */ = {
+		9B680E852C517A7B00143042 /* UIKitPro8 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B680E9A2C517A7C00143042 /* Build configuration list for PBXNativeTarget "UIKitPro6" */;
+			buildConfigurationList = 9B680E9A2C517A7C00143042 /* Build configuration list for PBXNativeTarget "UIKitPro8" */;
 			buildPhases = (
 				9B680E822C517A7B00143042 /* Sources */,
 				9B680E832C517A7B00143042 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = UIKitPro6;
+			name = UIKitPro8;
 			productName = UIKitPro6;
-			productReference = 9B680E862C517A7B00143042 /* UIKitPro6.app */;
+			productReference = 9B680E862C517A7B00143042 /* UIKitPro8.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B680E812C517A7B00143042 /* Build configuration list for PBXProject "UIKitPro6" */;
+			buildConfigurationList = 9B680E812C517A7B00143042 /* Build configuration list for PBXProject "UIKitPro8" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B680E852C517A7B00143042 /* UIKitPro6 */,
+				9B680E852C517A7B00143042 /* UIKitPro8 */,
 			);
 		};
 /* End PBXProject section */
@@ -354,7 +354,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B680E812C517A7B00143042 /* Build configuration list for PBXProject "UIKitPro6" */ = {
+		9B680E812C517A7B00143042 /* Build configuration list for PBXProject "UIKitPro8" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B680E982C517A7C00143042 /* Debug */,
@@ -363,7 +363,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B680E9A2C517A7C00143042 /* Build configuration list for PBXNativeTarget "UIKitPro6" */ = {
+		9B680E9A2C517A7C00143042 /* Build configuration list for PBXNativeTarget "UIKitPro8" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B680E9B2C517A7C00143042 /* Debug */,

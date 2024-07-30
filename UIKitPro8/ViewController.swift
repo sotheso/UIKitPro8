@@ -23,16 +23,17 @@ class ViewController: UITableViewController {
             urlString = "https://www.hackingwithswift.com/samples/petitions-2 .json"
         }
         
-        if let url = URL(string : urlString){
-            if let data = try? Data(contentsOf: url){
-                perse(json: data)
-            } else {
-                showError()
+        DispatchQueue.global(qos: .userInitiated) .async {
+            [weak self] in
+            if let url = URL(string: urlString) {
+                if let data = try? Data(contentsOf: url) {
+                    self?.parse(json: data)
+                        return
+                }
             }
-        } else {
-            showError()
         }
-    }
+        showError()
+        }
     
     func showError() {
         let ac = UIAlertController(title: "Lodding Error", message: "برای لود کردن صفحه مشکلی پیش آمده", preferredStyle: .alert)
@@ -40,7 +41,7 @@ class ViewController: UITableViewController {
         present(ac, animated: true)
     }
     
-    func perse (json: Data) {
+    func parse (json: Data) {
         let decoder = JSONDecoder()
         
         if let jsonPetitions = try? decoder.decode(Petitions.self, from: json){
